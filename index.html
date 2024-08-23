@@ -6,11 +6,86 @@
     <title>Min første nettside</title>
     <!-- Koble til en CSS-fil -->
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Enkel CSS som kan gå i en separat CSS-fil, styles.css */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 1rem 0;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        nav {
+            background-color: #e8491d;
+            padding: 5px 10px;
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h1, h2 {
+            color: #35424a;
+        }
+
+        footer {
+            background: #35424a;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (min-width: 768px) {
+            main {
+                max-width: 800px;
+                margin: 0 auto;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- En overskrift for siden -->
     <header>
         <h1>Velkommen til min første nettside!</h1>
+        <p>Utforsk mer om meg og mine interesser</p>
     </header>
 
     <!-- En navigasjonsmeny -->
@@ -27,15 +102,17 @@
         <!-- En seksjon med introduksjonstekst -->
         <section id="home">
             <h2>Introduksjon</h2>
-            <p>Dette er min første nettside. Her kan du se hvor noob jeg er i html.</p>
+            <p>Dette er min første nettside. Her kan du lære litt mer om meg og mine interesser.</p>
         </section>
 
         <!-- Om meg seksjon -->
         <section id="about">
             <h2>Om meg</h2>
-            <p>Jeg er en student ved høgskolen i østfold som ikke har peiling på html.</p>
+            <p>Jeg er en student ved høgskolen i Østfold med en lidenskap for webutvikling og design.</p>
             <!-- En YouTube-video -->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div style="text-align: center;">
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
         </section>
     </main>
 
@@ -43,7 +120,7 @@
     <footer>
         <section id="contact">
             <h2>Kontakt</h2>
-            <p>Du kan kontakte meg (plis ikke) på <a href="mailto:eksempel@gmail.com">eksempel@gmail.com</a></p>
+            <p>Du kan kontakte meg på <a href="mailto:eksempel@gmail.com" style="color: #e8491d;">eksempel@gmail.com</a></p>
         </section>
     </footer>
 </body>
