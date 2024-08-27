@@ -18,43 +18,6 @@
         min-height: 100vh;
       }
 
-      img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 8px;
-        margin-bottom: 20px;
-      }
-
-      h1, h2, h3, h4, h5 {
-        margin: 0;
-        padding: 10px 0;
-        text-align: center;
-      }
-
-      h1 {
-        font-size: 2.5em;
-      }
-
-      h2 {
-        font-size: 2em;
-        color: #495464;
-      }
-
-      h3 {
-        font-size: 1.5em;
-        color: #bbbfca;
-      }
-
-      h4 {
-        font-size: 1.2em;
-        color: #e8e8e8;
-      }
-
-      h5 {
-        font-size: 1em;
-        color: #f4f4f2;
-      }
-
       #animate-box {
         width: 100px;
         height: 100px;
@@ -62,49 +25,11 @@
         position: relative;
         margin-top: 20px;
       }
-
-      footer {
-        font-size: 0.8em;
-        color: #999;
-        margin-top: 20px;
-        padding-top: 10px;
-        text-align: center;
-        border-top: 1px solid #ddd;
-        width: 100%;
-      }
     </style>
   </head>
   <body>
-    <img src="https://www.dagbladet.no/images/72700293.jpg?imageId=72700293&panow=100&panoh=70&panox=0&panoy=2.8571428571429&heightw=30.867346938776&heighth=100&heightx=38.520408163265&heighty=0&width=1200&height=630" alt="Schmaker godt">
-    <h1></h1>
-    <h2>Halle alle shammen</h2>
-    <h3>De e shmart å leve sunt.</h3>
-    <h4>Tine melk er naturlig rik på shempebra protein, som bidrar til å shtyrke og fornye musklene.</h4>
-    <h5>SHCMAKER GODT</h5>
-
     <div id="animate-box"></div>
-    
-    <footer>Copyright Mr. Melk 2024</footer>
 
-    <script>
-      var box = document.getElementById('animate-box');
-      var position = 0;
-      var direction = 1;
-
-      function animate() {
-        // Beveg boksen
-        if (position >= window.innerWidth - 100) {
-          direction = -1; // Endre retning til venstre hvis høyre kant er nådd
-        } else if (position <= 0) {
-          direction = 1; // Endre retning til høyre hvis venstre kant er nådd
-        }
-        position += direction * 5;
-        box.style.left = position + 'px';
-
-        requestAnimationFrame(animate); // Be om neste animasjonsramme
-      }
-
-      animate(); // Start animasjonen
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
